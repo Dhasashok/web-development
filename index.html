@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Bucket List</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      background-color: #1e90ff;
+      color: white;
+      width: 100%;
+      padding: 1rem;
+      text-align: center;
+      font-size: 1.8rem;
+      border-radius: 10px;
+    }
+
+    main {
+      max-width: 600px;
+      width: 100%;
+      margin-top: 2rem;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #e6f7ff;
+      padding: 1rem;
+      margin: 0.5rem 0;
+      display: flex;
+      align-items: center;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    li:hover {
+      background-color: #cceeff;
+    }
+
+    li span {
+      margin-left: 1rem;
+      font-size: 1.2rem;
+    }
+
+    li.completed span {
+      text-decoration: line-through;
+      color: gray;
+    }
+
+    footer {
+      margin-top: 2rem;
+      padding: 1rem;
+      background-color: #1e90ff;
+      color: white;
+      text-align: center;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+
+      header, footer {
+        font-size: 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    My Personal Bucket List
+  </header>
+  <main>
+    <ul>
+      <li class="completed"><span>⭐ Learn a new language</span></li>
+      <li><span>⭐ Travel to India</span></li>
+      <li><span>⭐ Start a fitness routine</span></li>
+      <li><span>⭐ Learn to cook exotic dishes</span></li>
+      <li><span>⭐ Go skydiving</span></li>
+    </ul>
+  </main>
+  <footer>
+    Designed with passion for dreams
+  </footer>
+</body>
+</html>
